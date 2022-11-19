@@ -10,7 +10,7 @@ textLabel = QLabel(widget)
 textLabel.setText("Hello World!")
 textLabel.move(110,85)
 
-widget.setGeometry(50,50,320,200)
+widget.setGeometry(500,500,320,200)
 widget.setWindowTitle("PyQt5 Example")
 widget.show()
 sys.exit(app.exec())
