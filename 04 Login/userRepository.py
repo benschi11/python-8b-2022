@@ -24,7 +24,7 @@ class UserRepository:
             self.__nextId = self.__users[-1].Id + 1
 
 
-    def getAllUsers(self) -> list:
+    def getAllUsers(self) -> list[User]:
         return self.__users;
 
     def addUser(self, name:str, password:str) -> User:
