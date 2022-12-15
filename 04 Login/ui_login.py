@@ -12,7 +12,7 @@ from PyQt6 import QtCore, QtGui, QtWidgets
 class Ui_m_dlgLogin(object):
     def setupUi(self, m_dlgLogin):
         m_dlgLogin.setObjectName("m_dlgLogin")
-        m_dlgLogin.resize(543, 358)
+        m_dlgLogin.resize(543, 407)
         font = QtGui.QFont()
         font.setStyleStrategy(QtGui.QFont.StyleStrategy.PreferAntialias)
         m_dlgLogin.setFont(font)
@@ -86,6 +86,14 @@ class Ui_m_dlgLogin(object):
         self.m_btnLogin.setAutoFillBackground(False)
         self.m_btnLogin.setFlat(False)
         self.m_btnLogin.setObjectName("m_btnLogin")
+        self.m_lblErrors = QtWidgets.QLabel(m_dlgLogin)
+        self.m_lblErrors.setGeometry(QtCore.QRect(70, 333, 411, 51))
+        font = QtGui.QFont()
+        font.setFamily("MS Reference Sans Serif")
+        font.setPointSize(16)
+        self.m_lblErrors.setFont(font)
+        self.m_lblErrors.setText("")
+        self.m_lblErrors.setObjectName("m_lblErrors")
 
         self.retranslateUi(m_dlgLogin)
         QtCore.QMetaObject.connectSlotsByName(m_dlgLogin)

@@ -39,6 +39,16 @@ class UserRepository:
         self.__users.append(newUser);
         return newUser;
 
+    def getUserById(self,id:int) -> User:
+        for user in self.__users:
+            if user.Id == id:
+                return user;
+
+    def getUserByName(self, name:str) -> User:
+        for user in self.__users:
+            if user.Username.lower() == name.lower():
+                return user;
+
     def generateHash(password:str) -> str:
         plaintext = password.encode();
         passwordHash = hashlib.sha256(plaintext);

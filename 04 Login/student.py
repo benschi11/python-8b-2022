@@ -4,7 +4,7 @@ from user import User
 @dataclass
 class Student(User):
 
-    SchoolClass : str
+    SchoolClass : str = ""
     Courses : list = field(default_factory=[])
 
     

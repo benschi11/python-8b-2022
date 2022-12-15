@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>543</width>
-    <height>358</height>
+    <height>407</height>
    </rect>
   </property>
   <property name="font">
@@ -206,6 +206,25 @@
    </property>
    <property name="flat">
     <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="m_lblErrors">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>333</y>
+     <width>411</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>MS Reference Sans Serif</family>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string/>
    </property>
   </widget>
  </widget>
