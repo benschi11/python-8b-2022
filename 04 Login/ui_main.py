@@ -19,10 +19,16 @@ class Ui_MainWindow(object):
         self.menubar = QtWidgets.QMenuBar(MainWindow)
         self.menubar.setGeometry(QtCore.QRect(0, 0, 800, 21))
         self.menubar.setObjectName("menubar")
+        self.menuAdministrator = QtWidgets.QMenu(self.menubar)
+        self.menuAdministrator.setObjectName("menuAdministrator")
         MainWindow.setMenuBar(self.menubar)
         self.statusbar = QtWidgets.QStatusBar(MainWindow)
         self.statusbar.setObjectName("statusbar")
         MainWindow.setStatusBar(self.statusbar)
+        self.actionUser_hinzuf_gen = QtGui.QAction(MainWindow)
+        self.actionUser_hinzuf_gen.setObjectName("actionUser_hinzuf_gen")
+        self.menuAdministrator.addAction(self.actionUser_hinzuf_gen)
+        self.menubar.addAction(self.menuAdministrator.menuAction())
 
         self.retranslateUi(MainWindow)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
@@ -30,3 +36,5 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        self.menuAdministrator.setTitle(_translate("MainWindow", "Administrator"))
+        self.actionUser_hinzuf_gen.setText(_translate("MainWindow", "User hinzufügen"))

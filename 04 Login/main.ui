@@ -23,8 +23,20 @@
      <height>21</height>
     </rect>
    </property>
+   <widget class="QMenu" name="menuAdministrator">
+    <property name="title">
+     <string>Administrator</string>
+    </property>
+    <addaction name="actionUser_hinzuf_gen"/>
+   </widget>
+   <addaction name="menuAdministrator"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionUser_hinzuf_gen">
+   <property name="text">
+    <string>User hinzufügen</string>
+   </property>
+  </action>
  </widget>
  <resources/>
  <connections/>
