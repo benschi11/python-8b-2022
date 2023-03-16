@@ -27,12 +27,12 @@
     <property name="title">
      <string>Administrator</string>
     </property>
-    <addaction name="actionUser_hinzuf_gen"/>
+    <addaction name="actionUser_hinzufuegen"/>
    </widget>
    <addaction name="menuAdministrator"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
-  <action name="actionUser_hinzuf_gen">
+  <action name="actionUser_hinzufuegen">
    <property name="text">
     <string>User hinzufügen</string>
    </property>

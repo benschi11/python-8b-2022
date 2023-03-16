@@ -23,5 +23,6 @@ class LoginForm(Ui_m_dlgLogin,QDialog):
             self.m_lblErrors.setText("User does not exist.")
         elif(user.Password == UserRepository.generateHash(password)):
             self.m_lblErrors.setText("Willkommen " + user.Username)
+            self.done(1)
         else:
             self.m_lblErrors.setText("Password wrong")

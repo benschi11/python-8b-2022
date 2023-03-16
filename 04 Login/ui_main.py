@@ -25,9 +25,9 @@ class Ui_MainWindow(object):
         self.statusbar = QtWidgets.QStatusBar(MainWindow)
         self.statusbar.setObjectName("statusbar")
         MainWindow.setStatusBar(self.statusbar)
-        self.actionUser_hinzuf_gen = QtGui.QAction(MainWindow)
-        self.actionUser_hinzuf_gen.setObjectName("actionUser_hinzuf_gen")
-        self.menuAdministrator.addAction(self.actionUser_hinzuf_gen)
+        self.actionUser_hinzufuegen = QtGui.QAction(MainWindow)
+        self.actionUser_hinzufuegen.setObjectName("actionUser_hinzufuegen")
+        self.menuAdministrator.addAction(self.actionUser_hinzufuegen)
         self.menubar.addAction(self.menuAdministrator.menuAction())
 
         self.retranslateUi(MainWindow)
@@ -37,4 +37,4 @@ class Ui_MainWindow(object):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
         self.menuAdministrator.setTitle(_translate("MainWindow", "Administrator"))
-        self.actionUser_hinzuf_gen.setText(_translate("MainWindow", "User hinzufügen"))
+        self.actionUser_hinzufuegen.setText(_translate("MainWindow", "User hinzufügen"))

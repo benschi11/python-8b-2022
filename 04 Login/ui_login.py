@@ -60,29 +60,36 @@ class Ui_m_dlgLogin(object):
         palette = QtGui.QPalette()
         brush = QtGui.QBrush(QtGui.QColor(255, 170, 0))
         brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
-        palette.setBrush(QtGui.QPalette.ColorGroup.Active, QtGui.QPalette.ColorRole.ButtonText, brush)
+        palette.setBrush(QtGui.QPalette.ColorGroup.Active,
+                         QtGui.QPalette.ColorRole.ButtonText, brush)
         brush = QtGui.QBrush(QtGui.QColor(255, 0, 0, 128))
         brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
-        palette.setBrush(QtGui.QPalette.ColorGroup.Active, QtGui.QPalette.ColorRole.PlaceholderText, brush)
+        palette.setBrush(QtGui.QPalette.ColorGroup.Active,
+                         QtGui.QPalette.ColorRole.PlaceholderText, brush)
         brush = QtGui.QBrush(QtGui.QColor(255, 170, 0))
         brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
-        palette.setBrush(QtGui.QPalette.ColorGroup.Inactive, QtGui.QPalette.ColorRole.ButtonText, brush)
+        palette.setBrush(QtGui.QPalette.ColorGroup.Inactive,
+                         QtGui.QPalette.ColorRole.ButtonText, brush)
         brush = QtGui.QBrush(QtGui.QColor(255, 0, 0, 128))
         brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
-        palette.setBrush(QtGui.QPalette.ColorGroup.Inactive, QtGui.QPalette.ColorRole.PlaceholderText, brush)
+        palette.setBrush(QtGui.QPalette.ColorGroup.Inactive,
+                         QtGui.QPalette.ColorRole.PlaceholderText, brush)
         brush = QtGui.QBrush(QtGui.QColor(120, 120, 120))
         brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
-        palette.setBrush(QtGui.QPalette.ColorGroup.Disabled, QtGui.QPalette.ColorRole.ButtonText, brush)
+        palette.setBrush(QtGui.QPalette.ColorGroup.Disabled,
+                         QtGui.QPalette.ColorRole.ButtonText, brush)
         brush = QtGui.QBrush(QtGui.QColor(0, 0, 0, 128))
         brush.setStyle(QtCore.Qt.BrushStyle.SolidPattern)
-        palette.setBrush(QtGui.QPalette.ColorGroup.Disabled, QtGui.QPalette.ColorRole.PlaceholderText, brush)
+        palette.setBrush(QtGui.QPalette.ColorGroup.Disabled,
+                         QtGui.QPalette.ColorRole.PlaceholderText, brush)
         self.m_btnLogin.setPalette(palette)
         font = QtGui.QFont()
         font.setFamily("KG Second Chances Solid")
         font.setPointSize(16)
         font.setStyleStrategy(QtGui.QFont.StyleStrategy.PreferAntialias)
         self.m_btnLogin.setFont(font)
-        self.m_btnLogin.setCursor(QtGui.QCursor(QtCore.Qt.CursorShape.PointingHandCursor))
+        self.m_btnLogin.setCursor(QtGui.QCursor(
+            QtCore.Qt.CursorShape.PointingHandCursor))
         self.m_btnLogin.setAutoFillBackground(False)
         self.m_btnLogin.setFlat(False)
         self.m_btnLogin.setObjectName("m_btnLogin")

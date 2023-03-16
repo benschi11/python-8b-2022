@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>Dialog</class>
- <widget class="QDialog" name="Dialog">
+ <class>UserDialog</class>
+ <widget class="QDialog" name="UserDialog">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>300</height>
+    <width>505</width>
+    <height>351</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <widget class="QPushButton" name="pushButton">
+  <widget class="QPushButton" name="m_btnSave">
    <property name="geometry">
     <rect>
-     <x>210</x>
-     <y>230</y>
+     <x>250</x>
+     <y>240</y>
      <width>151</width>
      <height>51</height>
     </rect>
@@ -26,11 +26,11 @@
     <string>Speichern</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_2">
+  <widget class="QPushButton" name="m_btnCancel">
    <property name="geometry">
     <rect>
-     <x>30</x>
-     <y>230</y>
+     <x>70</x>
+     <y>240</y>
      <width>141</width>
      <height>51</height>
     </rect>
@@ -39,64 +39,94 @@
     <string>Abbrechen</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit_4">
+  <widget class="QLineEdit" name="m_tbPrename">
    <property name="geometry">
     <rect>
-     <x>160</x>
-     <y>150</y>
+     <x>230</x>
+     <y>157</y>
      <width>161</width>
      <height>20</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit_5">
+  <widget class="QLineEdit" name="m_btnSurname">
    <property name="geometry">
     <rect>
-     <x>160</x>
-     <y>180</y>
+     <x>230</x>
+     <y>187</y>
      <width>161</width>
      <height>20</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit">
+  <widget class="QLineEdit" name="m_tbUsername">
    <property name="geometry">
     <rect>
-     <x>160</x>
+     <x>230</x>
      <y>60</y>
      <width>161</width>
      <height>20</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit_2">
+  <widget class="QLineEdit" name="m_tbPassword">
    <property name="geometry">
     <rect>
-     <x>160</x>
+     <x>230</x>
      <y>90</y>
      <width>161</width>
      <height>20</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit_3">
+  <widget class="QLineEdit" name="m_tbPasswordRep">
    <property name="geometry">
     <rect>
-     <x>160</x>
+     <x>230</x>
      <y>120</y>
      <width>161</width>
      <height>20</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
   </widget>
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>80</x>
+     <x>50</x>
      <y>60</y>
-     <width>51</width>
+     <width>121</width>
      <height>16</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
    </property>
    <property name="text">
     <string>Username</string>
@@ -108,11 +138,16 @@
   <widget class="QLabel" name="label_2">
    <property name="geometry">
     <rect>
-     <x>80</x>
+     <x>50</x>
      <y>90</y>
-     <width>47</width>
-     <height>13</height>
+     <width>121</width>
+     <height>16</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
    </property>
    <property name="text">
     <string>Passwort</string>
@@ -124,11 +159,16 @@
   <widget class="QLabel" name="label_3">
    <property name="geometry">
     <rect>
-     <x>20</x>
+     <x>-10</x>
      <y>120</y>
-     <width>111</width>
+     <width>181</width>
      <height>20</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
    </property>
    <property name="text">
     <string>Passwort bestätigen</string>
@@ -140,11 +180,16 @@
   <widget class="QLabel" name="label_4">
    <property name="geometry">
     <rect>
-     <x>80</x>
+     <x>50</x>
      <y>160</y>
-     <width>47</width>
-     <height>13</height>
+     <width>121</width>
+     <height>16</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
    </property>
    <property name="text">
     <string>Vorname</string>
@@ -156,11 +201,16 @@
   <widget class="QLabel" name="label_5">
    <property name="geometry">
     <rect>
-     <x>80</x>
+     <x>50</x>
      <y>190</y>
-     <width>47</width>
-     <height>13</height>
+     <width>121</width>
+     <height>16</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
    </property>
    <property name="text">
     <string>Zuname</string>
@@ -174,15 +224,22 @@
     <rect>
      <x>10</x>
      <y>9</y>
-     <width>371</width>
+     <width>491</width>
      <height>31</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>20</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
    </property>
    <property name="text">
     <string>Benutzer hinzufügen</string>
    </property>
    <property name="alignment">
-    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    <set>Qt::AlignCenter</set>
    </property>
   </widget>
  </widget>
